@@ -1,6 +1,6 @@
 {% extends 'menu.html' %}
 {% block title %}
-Cadastro Usuario Laboratório
+Cadastro Usuário Laboratório
 {% endblock %}
 
 {% block menu %}
@@ -11,7 +11,7 @@ Cadastro Usuario Laboratório
     {% else %}
     <li><a href="{{url_for('login')}}">Login</a></li>
     {% endif %}
-    <li><a href="{{url_for('cadastro')}}">Cadastrar Usuario Sistema</a></li>
+    <li><a href="{{url_for('cadastro')}}">Cadastrar Usuário Sistema</a></li>
 {% endblock %}
 
 {% block content %}
@@ -49,7 +49,7 @@ Cadastro Usuario Laboratório
 {% endif %}
 
 <div class="campos cadastro">
-    <h3>Cadastrar novo usuário</h3>
+    <h3>Cadastrar Novo Usuário</h3>
     <form method="POST" action="{{url_for('cadastro_usuario_lab')}}">
         <div>
             <p>Laboratório:</p>
